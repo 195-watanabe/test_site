@@ -202,17 +202,43 @@
 }
 
 
-@media screen and (max-width: 1024px) {
 
-/* }
+@media screen and (max-width: 768px) {
+  .about_wrap {
+    padding: 0;
+  }
+}
 
-@media screen and (max-width: 768px) { */
-  .about_com_all {
-  padding: 50px;
+@media screen and (max-width: 540px) {
+  .about_com, .about_mem {
+    margin-bottom: 120px;
   }
 
-  .about_mem_all {
-    padding: 50px;
+  .about_com_all, .about_mem_all {
+    padding: 70px;
+    flex-direction: column;
+  }
+
+  .about_com .inner, .about_mem .inner  {
+    max-width: 90%;
+  }
+
+  .about_com_list {
+    width: 100%;
+  }
+
+  .about_mem_per {
+    width: 100%;
+    margin: 0 0 10%;
+  }
+
+  .about_mem_ttl::before {
+    top: 0;
+    height: 24px;
+  }
+
+  .about_acc_item {
+    margin-bottom: 24px;
   }
 }
 

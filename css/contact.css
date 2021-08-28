@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
 
-.top .top_img h1 {
-  font-size: 158px;
-}
-
 .contact_item .contact_txt {
   padding: 0 6% 120px;
   font-size: 20px;
@@ -116,21 +112,9 @@
 
 /* レスポンシブ */
 @media screen and (max-width: 768px) {
-
   .inner {
     max-width: 90%;
-  } 
-
-.top .top_img h1 {
-  width: 70%;
-  height: auto;
-  text-align: center;
-  align-items: center;
-  font-size: 76px;
-  font-weight: 900;
-  color: rgba(0,0,0,0);
-  -webkit-text-stroke: 3px #777;  
-}
+  }
 
   .contact_img {
   width: 70%;
@@ -182,6 +166,42 @@
 }
 }
 
+@media screen and (max-width: 540px) {
+  .contact_item .contact_txt {
+    padding-bottom: 80px;
+  }
+
+  .contact_box {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .contact_form_ttl {
+    display: inline-block;
+    height: 32px;
+    width: 100%;
+  }
+
+  .contact_form_ttl::after {
+    display: inline;
+    font-size: 12px;
+    line-height: 24px;
+    margin-left: 4px;
+    padding: 4px 10px;
+    vertical-align: middle;
+    position: static;
+  }
+
+  .contact_form_box1, .contact_form_box2 {
+    width: 100%;
+  }
+
+  .contact_textarea {
+    width: 100%;
+  }
+
+}
+
 @media screen and (max-width: 480px) {
   .contact_img {
   background-image: none;
@@ -203,18 +223,18 @@
   display: block;
 }
 
-.contact_form_ttl::after {
-  position: relative;
-  left: 10px;
+.contact_form_ttl {
+  display: inline-block;
 }
+
 
 .contact_form_box1,
 .contact_form_box2 {
-  width: 90%;
+  width: 100%;
   height: 35px;
 }
 
 .contact_textarea {
-  width: 90%;
+  width: 100%;
 }
 }
